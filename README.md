@@ -1,8 +1,6 @@
 # Lecto-MS-Agent
 Smart Campus Lecture Recommendation Assistant: Automatically extracts lecture information from university emails, delivers personalized recommendations, and supports natural language Q&amp;A.
 
-# Lecto-MS-Agent
-
 **🎓 学校讲座智能推荐助手**  
 基于 Microsoft Copilot Studio 构建的校园讲座推荐 Agent。
 
