@@ -1,18 +1,58 @@
 # Lecto-MS-Agent
 Smart Campus Lecture Recommendation Assistant: Automatically extracts lecture information from university emails, delivers personalized recommendations, and supports natural language Q&amp;A.
 
-**🎓 学校讲座智能推荐助手**  
-基于 Microsoft Copilot Studio 构建的校园讲座推荐 Agent。
 
-## ✨ 核心功能
+## ✨ Features
 
-- 智能识别学校邮件/公告中的讲座信息
-- 根据用户兴趣精准推荐讲座
-- 优先推送未来即将举办的活动
-- 提供推荐理由（MatchScore）、讲者、日期、地点和报名链接
-- 无匹配时推荐最接近的替代方案
+- Automatically extracts lecture information from Outlook emails
+- AI-powered lecture recommendations based on user interests
+- Prioritizes upcoming events
+- Natural language Q&A about lectures and seminars
+- Provides speaker, venue, registration link, and deadline
+- Real-time retrieval from SharePoint using Power Automate Actions
+- Built entirely with Microsoft Power Platform (No Code / Low Code)
 
-## 🚀 快速测试 Agent
+## 🏗️  overview
+
+```text
+                 University Outlook
+                         │
+                New Lecture Email
+                         │
+                         ▼
+          Power Automate Email Trigger
+                         │
+                         ▼
+      AI Lecture Information Extraction
+                         │
+                         ▼
+         SharePoint LectureEvents List
+          (Structured Lecture Database)
+                         │
+                         ▼
+         Microsoft Copilot Studio (LectO)
+                         │
+               User Natural Language Query
+                         │
+                         ▼
+             Power Automate Action (Flow)
+                         │
+                         ▼
+             SharePoint Get Items
+                         │
+                         ▼
+          Read Structured Lecture Information
+                         │
+                         ▼
+       AI Recommendation & Response Generation
+                         │
+                         ▼
+            Personalized Lecture Recommendation
+```
+
+
+
+## 🚀 Test Agent
 
 **[🔗 在线测试 Lecto Agent](https://copilotstudio.preview.microsoft.com/environments/f96d48ea-4f2a-ed23-b57b-17fbbc352a19/bots/crcce_Lecture_ttS834/canvas?__version__=2&enableFileAttachment=false&cliAgent=true)**
 
